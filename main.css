@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+ background-image: url('./pics/purple-cosmos-stars-space.jpg');
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 644px 1fr;
+  gap: 10px;
+}
+
+.grid {
+  width: 604px;
+  height: 604px;
+  margin: 20px;
+  border: 2px solid white;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  grid-auto-rows: 40px;
+}
+
+.grid > div {
+  width: 40px;
+  height: 40px;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.spaceship {
+  background-image: url('./pics/spaceship.png');
+}
+
+.laser {
+  background-image: url('./pics/projectile.png');
+}
+
+.alien {
+  background-image: url('./pics/alien3.png');
+}
+
+.hit {
+  background-image: url('./pics/explosion.png');
+}
+
+.message {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  opacity: 85%;
+}
+
+.message h1 {
+  color: #7132a8;
+  text-align: center;
+  line-height: 50px;
+}
+
+.scoreboard {
+  margin: 20px;
+  color: white;
+}
+
+.scoreboard > * {
+  margin: 20px;
+}
